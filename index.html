@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,7 @@
     
     
     <link rel="stylesheet" href="style.css">
-    >
+    
 
 </head>
 <body>
@@ -18,15 +20,15 @@
             
         
           <nav>
-            <img src="images/logo.jpg" class="logo">
-            
-            <ul>
+            <img src="images/logo.jpg" class="logo" alt="Logo">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+            <ul id="nav-links">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-          </nav>
+        </nav>
           <div class="header-text">
             
             <h1>Hi,I'm <span>Rakshitha</span> </h1>
@@ -204,7 +206,14 @@
 </div>
 
 
-<div class="Copyright">Copyright@Rakshitha.portfolio website</div>        
+<div class="Copyright">Copyright@Rakshitha.portfolio website</div> 
+<script>
+  function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show'); // Toggle the 'show' class to display the menu
+  }
+</script>
+
  
 <script>
   var tablinks=document.getElementsByClassName("tab-links")
