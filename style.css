@@ -476,11 +476,7 @@ form input,form textarea{
     }
 }
 
-@media screen and (max-width: 480px) {
-    #header {
-        height: 50vh; /* Further reduce height for small phones */
-    }
-}
+
 @media screen and (max-width: 768px) {
     /* Show the hamburger menu icon on smaller screens */
     .menu-icon {
